@@ -1,5 +1,6 @@
 
 s = [10, 11, 12, 13, 14, 15]
 print(s)
-s[0], s[-1] = s[-1], s[0]
+ss = s.pop(-1)
+s.insert(0, ss)
 print(s)
