@@ -1,11 +1,11 @@
-s = [22, 10, 0, 10, 9, 10, 99, 11, 10, 22, 10, 45, 55, 10]
+s = [22, 0, 0, 0, 9, 0, 99, 11, 0, 22, 0, 45, 55, 0]
 
 ss = []
 
 for x in s:
-    if x != 10:
+    if x != 0:
         ss.append(x)
 
-ten = [10] * (len(s) - len(ss))
-result = ss + ten
+zero = [0] * (len(s) - len(ss))
+result = ss + zero
 print(result)
