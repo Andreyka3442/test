@@ -1,0 +1,8 @@
+num = [2, 3, 5, 7, 9, 10, 11]
+if not num:
+     result = 0
+else:
+     s = sum(num[::2])
+     result = s * (num[-1])
+
+print('Результат:', result) 
