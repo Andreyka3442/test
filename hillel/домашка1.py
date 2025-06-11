@@ -1,14 +1,6 @@
-num = int(input("Введи четырёхзначное число: "))
+import random
 
-if 1000 <= num <= 9999:
-    number1 = num // 1000
-    number2 = (num // 100) % 10
-    number3 = (num // 10) % 10
-    number4 = num % 10
-
-    print(number1)
-    print(number2)
-    print(number3)
-    print(number4)
-else:
-    print("Ошибка: нужно ввести именно четырёхзначное число.")
+numbers = [random.randint(1, 59) for _ in range(random.randint(3,10))]
+print(numbers)
+new_list = [numbers[0], numbers[-2], numbers[-1]]
+print(new_list)
